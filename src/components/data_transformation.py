@@ -25,9 +25,9 @@ class DataTransformation:
         try:
 
             numerical_columns=['reading score','writing score']
-            categorical_columns=['gender','race/ethnicity',
-                                 'parental level of education','lunch',
-                                 'test preparation course']
+            categorical_columns=['gender','logical reasoning',
+                                 'learning style','stress level',
+                                 'tutions']
 
             num_pipeline=Pipeline(
                 steps=[

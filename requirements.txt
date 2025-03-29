@@ -6,5 +6,7 @@ scikit-learn
 catboost
 xgboost
 dill
-flask
+Flask
+Flask-Bootstrap4
+
 #-e .

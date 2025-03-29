@@ -110,22 +110,22 @@ class PredictPipeline:
 class CustomData:
     def __init__(  self,
         gender: str,
-        race_ethnicity: str,
-        parental_level_of_education,
-        lunch: str,
-        test_preparation_course: str,
+        logical_reasoning: str,
+        learning_style,
+        stress_level: str,
+        tutions: str,
         reading_score: int,
         writing_score: int):
 
         self.gender = gender
 
-        self.race_ethnicity = race_ethnicity
+        self.logical_reasoning = logical_reasoning
 
-        self.parental_level_of_education = parental_level_of_education
+        self.learning_style  = learning_style
 
-        self.lunch = lunch
+        self.stress_level = stress_level
 
-        self.test_preparation_course = test_preparation_course
+        self.tutions = tutions
 
         try:
             self.reading_score = float(reading_score)
@@ -138,10 +138,10 @@ class CustomData:
         try:
             custom_data_input_dict = {
                 "gender": [self.gender],
-                "race/ethnicity": [self.race_ethnicity],
-                "parental level of education": [self.parental_level_of_education],
-                "lunch": [self.lunch],
-                "test preparation course": [self.test_preparation_course],
+                "logical reasoning": [self.logical_reasoning],
+                "learning style": [self.learning_style],
+                "stress level": [self.stress_level],
+                "tutions": [self.tutions],
                 "reading score": [self.reading_score],
                 "writing score": [self.writing_score],
             }
